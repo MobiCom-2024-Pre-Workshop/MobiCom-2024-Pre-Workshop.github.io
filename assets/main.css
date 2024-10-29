@@ -115,10 +115,10 @@ td.chair img {
 
 /* Sponsor Images */
 table.sponsors {
-    width: 100%;             /* 表格宽度为100% */
-    /*max-width: 800px;        !* 设置最大宽度 *!*/
-    table-layout: fixed;     /* 均分单元格宽度 */
-    border-spacing: 10px;    /* 单元格之间的间距 */
+    width: 100%;
+    max-width: 800px;
+    table-layout: fixed; /* 确保每个单元格等宽 */
+    border-spacing: 10px; /* 单元格之间的间距 */
 }
 
 td.sponsor {
@@ -128,9 +128,32 @@ td.sponsor {
     padding: 10px;
 }
 
-td.sponsor img {
-    width: 50%;             /* 图片相对单元格宽度80% */
-    height: auto;           /* 保持图片比例 */
+.sponsor-text {
+    text-align: left;
+    white-space: normal; /* 确保文字可以换行 */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+    table.sponsors {
+        width: 100%; /* 手机上表格宽度为 100% */
+    }
+    td.sponsor {
+        width: 100%; /* 小屏幕上单元格100%宽度 */
+        display: flex;
+        flex-direction: column; /* 图片和文字在竖直方向排列 */
+        align-items: center;
+    }
+    .sponsor-text {
+        font-size: 1em; /* 调整文字大小适配小屏幕 */
+        text-align: center;
+        white-space: normal;
+    }
+    td.sponsor img {
+        width: 50%; /* 图片在小屏幕上较小 */
+        margin-bottom: 10px; /* 图片和文字之间的间距 */
+    }
 }
 
 
