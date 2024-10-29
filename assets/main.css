@@ -118,14 +118,14 @@ table.sponsors {
     width: 100%;             /* 表格宽度为100% */
     /*max-width: 800px;        !* 设置最大宽度 *!*/
     table-layout: fixed;     /* 均分单元格宽度 */
-    border-spacing: 30px;    /* 单元格之间的间距 */
+    border-spacing: 10px;    /* 单元格之间的间距 */
 }
 
 td.sponsor {
     white-space: nowrap;
     text-align: center;
     vertical-align: middle;
-    padding: 30px;
+    padding: 10px;
 }
 
 td.sponsor img {
