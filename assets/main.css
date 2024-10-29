@@ -114,17 +114,23 @@ td.chair img {
 
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:15%; text-align:center; vertical-align:middle; padding: 20px; /* 单元格内的间距 */}
-td.sponsor img{width: 80%}
+table.sponsors {
+    width: 100%;             /* 表格宽度为100% */
+    /*max-width: 800px;        !* 设置最大宽度 *!*/
+    table-layout: fixed;     /* 均分单元格宽度 */
+    border-spacing: 30px;    /* 单元格之间的间距 */
+}
 
-@media (max-width: 600px) {
-    table.sponsors {
-        width: 100%;       /* 手机上表格宽度为 100% */
-    }
-    td.sponsor img {
-        width: 100%;      /* 手机上图片宽度为单元格 100% */
-    }
+td.sponsor {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+}
+
+td.sponsor img {
+    width: 50%;             /* 图片相对单元格宽度80% */
+    height: auto;           /* 保持图片比例 */
 }
 
 
