@@ -115,8 +115,8 @@ td.chair img {
 
 /* Sponsor Images */
 table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 100%}
+td.sponsor{white-space:nowrap; width:15%; text-align:center; vertical-align:middle; padding: 20px; /* 单元格内的间距 */}
+td.sponsor img{width: 80%}
 
 @media (max-width: 600px) {
     table.sponsors {
