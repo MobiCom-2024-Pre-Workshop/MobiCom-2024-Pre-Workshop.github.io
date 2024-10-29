@@ -91,12 +91,32 @@ table.navigation{width:800px;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
-td.sponsor{white-space:nowrap; width:10%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
-td.sponsor img{width: 10%}
- .sponsors td {
-     padding: 10px;
- }
+table.sponsors {
+    width: 100%;          /* 将表格宽度设置为 100% */
+    max-width: 800px;     /* 最大宽度设为 800px，大屏上保持不变 */
+    margin: 0 auto;       /* 居中对齐 */
+}
+
+td.sponsor {
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+td.sponsor img {
+    width: 80%;           /* 图片宽度设为 80%，相对于单元格大小 */
+}
+
+@media (max-width: 600px) {
+    table.sponsors {
+        width: 100%;       /* 手机上表格宽度为 100% */
+    }
+    td.sponsor img {
+        width: 100%;      /* 手机上图片宽度为单元格 100% */
+    }
+}
+
 
 
 #rf {
